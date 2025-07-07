@@ -3,24 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Custom New Tab</title>
+  <title>New Tab</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Welcome to your new tab!</h1>
-  </header>
+  <!-- Video background -->
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="background.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 
-  <main>
-    <input type="text" id="search" placeholder="Search DuckDuckGo..." />
-    <div id="bookmarks">
-      <h2>Bookmarks</h2>
-      <ul>
-        <li><a href="https://librewolf.net" target="_blank">LibreWolf</a></li>
-        <li><a href="https://github.com" target="_blank">GitHub</a></li>
-      </ul>
-    </div>
-  </main>
+  <!-- Main content -->
+  <div id="content">
+    <header>
+      <h1>Welcome Back</h1>
+    </header>
+
+    <main>
+      <input
+        type="text"
+        id="search"
+        placeholder="Search DuckDuckGo..."
+        aria-label="Search the web"
+        autofocus
+      />
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
