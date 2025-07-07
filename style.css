@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+  background: #f0f0f0;
+  color: #333;
+}
+
+input#search {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#bookmarks ul {
+  list-style: none;
+  padding: 0;
+}
+
+#bookmarks li {
+  margin: 0.5rem 0;
+}
+
+#bookmarks a {
+  text-decoration: none;
+  color: #007acc;
+}
+
+#bookmarks a:hover {
+  text-decoration: underline;
+}
