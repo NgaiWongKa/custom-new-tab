@@ -1,8 +1,15 @@
 window.addEventListener('DOMContentLoaded', () => {
-  const searchInput = document.getElementById("search");
-  searchInput.focus();
+  const search = document.getElementById("search");
 
-  searchInput.addEventListener("keydown", function (e) {
+  setTimeout(() => {
+    search.focus();
+  }, 100);
+
+  document.body.addEventListener('click', () => {
+    search.focus();
+  }, { once: true });
+
+  search.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
       const query = this.value.trim();
       if (query) {
